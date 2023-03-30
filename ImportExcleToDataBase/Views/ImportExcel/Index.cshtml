@@ -1,0 +1,88 @@
+﻿@model IEnumerable<ImportExcleToDataBase.Models.StudentEntity>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align:center">Import to Excel</h1>
+<hr />
+
+@using (Html.BeginForm("Index", "ImportExcel", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="col-12" style="padding-top:20px">
+        <div class="col-4">
+        </div>
+        <div class="col-4">
+            <input type="file" name="file" class="form-control" />
+
+        </div>
+        <div class="col-4" style="padding-top:20px">
+
+            <input type="submit" value="Upload" class="form-control btn-danger" />
+        </div>
+
+    </div>
+    <br />
+}
+<div class="col-lg-12">
+    <button id="excelIcon" style="width: 40px; float:right;">
+        <img src="~/icons/icons8-xls-48.png" width="25" height="25" />
+    </button>
+    <br />
+    <table class="table" id="bindTable">
+        <thead>
+            <tr>
+                <th>sl#</th>
+                <th>Student Name</th>
+                <th>Total Mark(600)</th>
+                <th>Obtained Mark</th>
+                <th>Percentage(%)</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.STUD_ID</td>
+                        <td>@item.STUD_NAME</td>
+                        <td>@item.TOTAL_MARK</td>
+                        <td>@item.OBTAINED_MARK</td>
+                        <td>@item.PERCENTAGE_MARK</td>
+                        <td>@item.Grade</td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+</div>
+@if (ViewBag.Message != null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(window).on("load", function () {
+            debugger
+            alert("@ViewBag.Message");
+
+            window.location.href = "ImportExcel/Index";
+        });
+    </script>
+}
+
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="~/lib/jquery/dist/GenerateExcelFile.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+   
+    $('#excelIcon').click(function (event) {
+        debugger;
+        $.post("/ImportExcel/Export", function () {
+            alert("Download Successfully")
+        });
+    });
+
+</script>
