@@ -8,7 +8,7 @@ namespace ImportExcleToDataBase.Repository
 {
     public interface IStudentRepository
     {
-        Task<List<StudentEntity>> GetAllStudent();
+        List<StudentEntity> GetAllStudent();
         Task<int> InsertStudent(StudentEntity se);
     }
 }

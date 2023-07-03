@@ -21,9 +21,11 @@ namespace ImportExcleToDataBase.Service
             return await _sturepo.InsertStudent(se);
         }
 
-        public async Task<List<StudentEntity>> GetAllStudentService()
+        public  List<StudentEntity> GetAllStudentService()
         {
-            return await _sturepo.GetAllStudent();
+            return  _sturepo.GetAllStudent();
         }
+
+        
     }
 }

@@ -8,7 +8,7 @@ namespace ImportExcleToDataBase.Service
 {
     public interface IStudentService
     {
-        Task<List<StudentEntity>> GetAllStudentService();
+        List<StudentEntity> GetAllStudentService();
         Task<int> InsertStudentService(StudentEntity se);
     }
 }

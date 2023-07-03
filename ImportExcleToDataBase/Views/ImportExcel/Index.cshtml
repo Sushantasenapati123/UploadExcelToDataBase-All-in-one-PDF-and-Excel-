@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
 <h1 style="text-align:center">Import to Excel</h1>
 <hr />
@@ -25,9 +26,8 @@
     <br />
 }
 <div class="col-lg-12">
-    <button id="excelIcon" style="width: 40px; float:right;">
-        <img src="~/icons/icons8-xls-48.png" width="25" height="25" />
-    </button>
+    <a href="/ImportExcel/ImportoExcelFromDataBase" title="Export to Excel" id="printIcon" data-toggle="tooltip" data-placement="top" class="btn btn-outline-info float-right mt-2 mb-2"><i class="fa-solid fa-file-excel"></i></a>
+
     <br />
     <table class="table" id="bindTable">
         <thead>
@@ -60,6 +60,7 @@
         </tbody>
     </table>
 </div>
+<button id="btnExportPdf" class="btn btn-primary float-right">Convert to PDF</button>
 @if (ViewBag.Message != null)
 {
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -77,12 +78,13 @@
 <script src="~/lib/jquery/dist/GenerateExcelFile.js"></script>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript">
-   
-    $('#excelIcon').click(function (event) {
-        debugger;
-        $.post("/ImportExcel/Export", function () {
-            alert("Download Successfully")
-        });
-    });
 
+
+
+</script>
+
+<script type="text/javascript">
+    $("#btnExportPdf").click(function () {
+        window.location.href = "ImportExcel/GeneratePDF";
+    });
 </script>

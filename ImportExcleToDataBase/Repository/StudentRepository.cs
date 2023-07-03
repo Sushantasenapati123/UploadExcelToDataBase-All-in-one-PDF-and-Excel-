@@ -38,7 +38,7 @@ namespace ImportExcleToDataBase.Repository
                 return 0;
             }
         }
-        public async Task<List<StudentEntity>> GetAllStudent()
+        public  List<StudentEntity> GetAllStudent()
         {
             try
             {
@@ -56,5 +56,7 @@ namespace ImportExcleToDataBase.Repository
 
             }
         }
+
+      
     }
 }
