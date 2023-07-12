@@ -30,6 +30,12 @@ namespace ImportExcleToDataBase.Controllers
             ViewBag.Message = null;
             return View(lstobj);
         }
+        
+        public async Task<IActionResult> Graph()
+        {
+          
+            return View();
+        }
         public void ImportoExcelFromDataBase()
         {
             using (var workbook = new XLWorkbook())
@@ -75,8 +81,6 @@ namespace ImportExcleToDataBase.Controllers
 
             int c = 0;
             List<StudentEntity> detail = _studservice.GetAllStudentService();
-
-          
             string htmlcontent = "<div class='col-lg-12'>";
             htmlcontent += "<h2 style='text-align:center'>Salary Slab</h2>";
             htmlcontent += "<hr>";

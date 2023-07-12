@@ -27,6 +27,7 @@ namespace ImportExcleToDataBase
             services.AddControllersWithViews();
             services.AddScoped<IStudentService, StudentService>();
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();//run time compliation
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
