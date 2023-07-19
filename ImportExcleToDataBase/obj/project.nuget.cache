@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nE87A5s0LVII4JCWEDNuBbNTmE88KdnZl0uNR1yNGjOQ4KzXWElYRKjvALl7UFrKiVAkkXDS5SiPe2CGtMuf3Q==",
+  "dgSpecHash": "DreIJgiDTccbyan0g51x4Wz64o4EY4Oh8DTMA5aZt0Gs9mEjYSy1x3AR/m8q68yPpEz5WQSatxcOUS7eCgybCg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sushanta.senapati\\Desktop\\All excelpdf\\UploadExcelToDataBase\\ImportExcleToDataBase\\ImportExcleToDataBase.csproj",
   "expectedPackageFiles": [
@@ -164,7 +164,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'PDFsharp 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'PDFsharp 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "PDFsharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

@@ -898,6 +898,9 @@ C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcl
 C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\ImportExcleToDataBase.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\Razor\Views\ImportExcel\Graph.cshtml.g.cs
-C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\staticwebassets\ImportExcleToDataBase.StaticWebAssets.xml
-C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\scopedcss\bundle\ImportExcleToDataBase.styles.css
 C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\ImportExcleToDataBase.csproj.AssemblyReference.cache
+C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\staticwebassets\ImportExcleToDataBase.StaticWebAssets.Pack.cache
+C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.ImportExcleToDataBase.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.ImportExcleToDataBase.props
+C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.ImportExcleToDataBase.props
+C:\Users\sushanta.senapati\Desktop\All excelpdf\UploadExcelToDataBase\ImportExcleToDataBase\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.ImportExcleToDataBase.props

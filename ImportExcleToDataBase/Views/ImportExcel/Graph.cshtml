@@ -17,16 +17,16 @@
         <thead>
             <tr>
                 <th>SL</th>
-                <th>Column 1</th>
-                <th>Column 2</th>
+                <th>Min</th>
+                <th>max</th>
                 <!-- Add more table headers as needed -->
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
-                <td>data</td>
-                <td>data</td>
+                <td><input type="date" id="start-date" /></td>
+                <td><input type="date" id="end-date" /></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -98,6 +98,27 @@
 </html>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+<script>
+    // Get the date input elements
+    const startDateInput = document.getElementById('start-date');
+    const endDateInput = document.getElementById('end-date');
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Get the maximum date you want to allow (e.g., 2023-12-31)
+    const maxDate = new Date('2023-12-31');
+
+    // Format the current date and the maximum date in YYYY-MM-DD format
+    const formattedCurrentDate = currentDate.toISOString().slice(0, 10);
+    const formattedMaxDate = maxDate.toISOString().slice(0, 10);
+
+    // Set the 'min' and 'max' attributes of the date input elements
+    startDateInput.setAttribute('min', formattedCurrentDate);
+    endDateInput.setAttribute('max', formattedMaxDate);
+</script>
+
 
 
 @*script link for Data Table and Jquery*@
